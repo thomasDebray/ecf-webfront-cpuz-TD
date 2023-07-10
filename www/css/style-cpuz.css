@@ -1,0 +1,25 @@
+:root {
+    --primary-text: lightblue;
+    --secondary-text: lightgreen;
+    --primary-background: #222222;
+    --secondary-background: #000000;
+    --hover-color: #d12df115;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--primary-text);
+    background: var(--primary-background);
+}
+
+body > header {
+    margin-bottom: 2rem;
+}
