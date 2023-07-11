@@ -9,16 +9,19 @@
     <script src="js/main-cpuz.js" type="module"></script>
 </head>
 <body>
-    <header>
-        <h1>Liste des CPUs</h1>
-        <img src="img/cpuz.webp">
-        <fieldset>
-            <legend>Rechercher un modèle</legend>
-            <input type="search">
-        </fieldset>
+    <header role="banner">
+        <div class="grid">
+            <h1 id="title">Liste des CPUs</h1>
+            <img src="img/cpuz.webp" id="cpu" alt="image représentant des processeurs">
+        </div>
+        <form role="search" id="search">
+            <label for="searchField">Rechercher un modèle</label>
+            <input type="search" id="searchField">
+        </form>
     </header>
-    <main>
+    <main role="main">
         <table>
+            <caption>Caractèristiques de plusieurs CPUs sous forme de tableau</caption>
             <thead>
             <tr>
                 <th>Identifiant</th>
@@ -26,13 +29,17 @@
                 <th>Famille</th>
                 <th>Modèle</th>
                 <th>Fréquence (Ghz)</th>
+                <th id="price">Prix</th>
                 <th>Nom complet</th>
             </tr>
             </thead>
+            <tbody id="cpuzBody">
+
+            </tbody>
         </table>
     </main>
-    <footer>
-        <p>Nombre de modèles : <span>0</span></p>
+    <footer role="contentinfo">
+        <p>Nombre de modèles : <span id="numberOfCpu">0</span></p>
     </footer>
 </body>
 </html>

@@ -23,3 +23,67 @@ body {
 body > header {
     margin-bottom: 2rem;
 }
+
+td {
+    border: 1px solid var(--primary-text);
+}
+
+table {
+    border: 1px solid var(--primary-text);
+    border-collapse: collapse;
+
+}
+
+th {
+    border: 1px solid var(--primary-text);
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A B";
+    justify-content: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    align-self: center;
+    justify-self: center;
+    grid-area:A;
+}
+
+#cpu {
+    height: 40vh;
+    align-self: center;
+    justify-self: center;
+    grid-area:B;
+}
+
+form {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+tr td {
+    background-color: var(--secondary-background);
+}
+
+tr:hover td {
+    background-color: var(--hover-color);
+}
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 5px;
+}
